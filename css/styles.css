@@ -63,7 +63,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #6e6c6cc5;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -93,6 +93,7 @@
 }
 
 body {
+  padding: 0;
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -12635,6 +12636,11 @@ p {
 .page-section {
   background-color: #afafaf;
   padding: 6rem 0;
+  background-image: url("../assets/img/jungla.png");
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .page-section h2.section-heading,
@@ -12808,6 +12814,7 @@ header.masthead .masthead-heading {
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
+    
   }
 }
 
@@ -12863,7 +12870,7 @@ header.masthead .masthead-heading {
 }
 
 .portfolio-modal .modal-dialog {
-  margin: 1rem;
+  margin: 20rem;
   max-width: 100vw;
 }
 
