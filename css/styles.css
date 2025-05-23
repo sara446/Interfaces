@@ -80,6 +80,45 @@
   --bs-highlight-bg: #fff4cc;
 }
 
+input[type="radio"].color-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+input[type="radio"].color-rojo {
+  background-color: #dc3545;
+}
+
+input[type="radio"].color-verde {
+  background-color: #28a745;
+}
+
+input[type="radio"].color-azul {
+  background-color: #007bff;
+}
+
+/* efecto de selección */
+input[type="radio"].color-radio:checked::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
 *,
 *::before,
 *::after {
@@ -2117,6 +2156,14 @@ progress {
   color: var(--bs-table-hover-color);
 }
 
+.texto {
+  margin: 100px;
+}
+
+#cardlogin {
+  background-color: rgba(122, 122, 122, 0.548);
+}
+
 #cardindex {
   width: 330px;
   height: 530px;
@@ -2124,10 +2171,10 @@ progress {
   padding: 1rem
 }
 
-#videoIndex{
+#videoIndex {
   width: 300px;
   height: 500px;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 
@@ -6326,6 +6373,8 @@ fieldset:disabled .btn {
     overflow-y: auto;
   }
 }
+
+
 
 .tooltip {
   --bs-tooltip-zindex: 1080;
@@ -12637,7 +12686,7 @@ p {
   background-color: #afafaf;
   padding: 6rem 0;
   background-image: url("../assets/img/jungla.png");
-   background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12698,7 +12747,7 @@ p {
 
 #mainNav .navbar-brand {
   color: #061c25;
-   font-family: "Merienda", cursive;
+  font-family: "Merienda", cursive;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -12769,13 +12818,24 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color:#f69a0b ;
+  color: #f69a0b;
   background-image: url("../assets/img/imagenIndex.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: contain;
   background-color: #000;
+}
+
+.textIndexB {
+  color: #f69a0b;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header.masthead .masthead-subheading {
@@ -12814,7 +12874,7 @@ header.masthead .masthead-heading {
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
-    
+
   }
 }
 
@@ -12835,7 +12895,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #061c25 ;
+  background: #061c25;
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -12861,7 +12921,7 @@ header.masthead .masthead-heading {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0;
-  color: #f69a0b ;
+  color: #f69a0b;
 }
 
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
